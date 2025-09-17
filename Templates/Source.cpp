@@ -16,16 +16,13 @@ int half(int);
 int main() {
 
 
-	int a = 5;
-	int b = 10;
-	int c = 23;
-	int d = 44;
+	double a = 11.0;
+	float b = 7.0f;
+	int c = 5;
 
-	cout << half(a) << endl << endl;
-	cout << half(b) << endl << endl;
-	cout << half(c) << endl << endl;
-	cout << half(d) << endl << endl;
-
+	cout << half(a) << endl;
+	cout << half(b) << endl;
+	cout << half(c);
 
 
 	cout << endl << endl;
@@ -37,7 +34,6 @@ int half(int n) {
 	
 	double temp = n / 2.0;
 	int tempInt = n / 2;
-	cout << temp << endl << tempInt << endl;
 	double decimal = temp - tempInt;
 	if (decimal < 0.5) {
 		return tempInt;
